@@ -37,7 +37,7 @@ position: relative;
   margin: 1em;
   transform: rotateY(0deg);
   transition: 1s;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /*IE 지원 X */
   }
 
 .card-side {
@@ -51,7 +51,7 @@ position: relative;
   height: 100%;
   border-radius: 0.5em;
   font-size: 1.5rem;
-  -webkit-backface-visibility: hidden;  /*벤더 접두어*/
+  -webkit-backface-visibility: hidden;  /*벤더 접두 */
   backface-visibility: hidden; /*표준 속성은 가장 아래에 기입*/
 
 }

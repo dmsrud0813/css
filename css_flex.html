@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    display: flex;
+    /* flex-direction: column-reverse; /*row : 기본 열 정렬 /column :행 정렬 */
+    /* justify-content: center;
+    align-items:center; */
+    height: 80vh;
+    background: gray;
+
+  }
+
+  .item {
+    /* flex-grow: 1;*/  /*여백의 비율*/
+    /* flex-basis: 0;*/ /*원래 콘텐츠가 가지는 폭 */
+    flex: 1;
+    font-size: 3rem;
+    border : 3px solid black;
+    background: white;
+  }
+  /* .item:nth-child(1) { flex-grow : 1;}
+  .item:nth-child(2) { flex-grow : 5;}
+  .item:nth-child(3) { flex-grow : 2;}
+  .item:nth-child(4) { flex-grow : 3;}
+  .item:nth-child(5) { flex-grow : 1;} */
+</style>
+<body>
+  <div class="container">
+    <div class="item">AAA</div>
+    <div class="item">B</div>
+    <div class="item">CCCCCC</div>
+    <div class="item">DDD</div>
+    <div class="item">E</div>
+  </div>
+</body>
+</html>
+
+<!--
+그리드 :
+레이아웃 격자 구성
+가로 세로 두 가지 방향 축 구성
+
+플렉스 :
+가로 or 세로 축이 한 방향
+
+보통 그리드 박스 안에 플렉스
+ -->
